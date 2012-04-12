@@ -1,0 +1,724 @@
+/*This file is part of Bwater 1.0*/
+/*RFS stands for relevant font size and CB for containing block. 'em' units are always relative to relevant font size (http://www.w3.org/TR/CSS2/syndata.html#length-units) and 'percent' units usually are relative to containing block width (http://www.w3.org/TR/CSS2/syndata.html#percentage-units)*/
+
+/*skeletor*/
+body {
+   width: 100%;
+   margin:auto;
+}
+
+#branding, #colophon {
+   width: 100%;
+}
+
+#branding {
+   /*RFS: 16px - #branding*/
+   position: relative; /*to position skip link absolutly respect it*/
+   line-height: 1.5em; /*24px*/
+}
+
+#hgroup_branding_wrapper {
+   /*RFS: 16px - #branding*/
+   padding-bottom: 1em; /*16px*/
+   border-bottom: 0.75em solid #000; /*12px*/ 
+   margin-bottom: 0.75em; /*12px, because the 12px border-bottom*/
+}
+
+#hgroup_branding_subwrapper {
+   /*RFS: 16px - #branding*/
+   max-width: 60em; /*960px*/
+   margin: auto;
+}
+
+#branding hgroup {
+   /*CB: 960px - #hgroup_brandind_subwrapper*/
+   /*RFS: 16px - #branding*/
+   padding: 0.5em 1.041% 1.5em 3.75%; /*8px 10px 24px 36px*/
+   margin-left: 70.833333%; /*680px, (8.5cols X 60pxWidth) + (8cols X 20pxMargin) + (1cols X 10pxMargin)*/
+   margin-right: 2.5%; /*24px*/
+}
+
+#colophon {
+   /*RFS: 13px - #colophon*/
+   border-top: 0.923em solid #000; /*12px*/
+   margin-bottom: 1.846em; /*24px*/
+   line-height: 1.846em; /*24px*/
+}
+
+#colophon-content-wrapper {
+   /*CB: width not defined - body*/
+   /*RFS: 13px - #colophon*/
+   max-width: 72.308em; /*940px*/
+   padding: 0 1.064%; /*10px*/
+   margin: auto;
+}
+
+#main {
+   /*box: 960px; (12cols X 60pxWidth) + (12cols X 20pxMargin)*/
+   /*CB: width not defined - page*/
+   /*RFS: 16px - browser default*/
+   max-width: 59.375em; /*950px*/
+   margin: 3em auto 2.25em auto; /*48px auto 36px auto margin-bottom because the 12px border-top in #colophon*/
+   padding-left: 1.053%; /*10px*/
+   clear: both;
+   overflow: hidden;
+}
+
+#primary {
+   float:left;
+}
+
+#secondary {
+   float: right;
+}
+
+#primary {
+   /*box: 640px; (8cols X 60pxWidth) + (7cols X 20pxMargin) + (2col X 10pxMargin)*/
+   /*CB: 950px - #main*/
+   width: 65.263%; /*620px*/
+   margin-right: 2.105%; /*20px*/
+}
+
+.full-width #primary, .image-attachment #primary, .error404 #primary, .one-col #primary { /*without sidebars*/
+   /*CB: 950px - #main*/
+   width: 100%; /*950px*/
+   margin-right: 0;
+}
+
+#secondary {
+   /*box: 310px; (4cols X 60pxWidth) + (3cols X 20pxMargin) + (1col X 10pxMargin)*/
+   /*CB: 950px - #main*/
+   width: 29.474%; /*280px*/
+   margin-left: 3.158%; /*30px*/
+}
+
+/*general forms*/
+label {
+   float: left;
+   clear: left;
+}
+
+input, select, textarea {
+   /*RFS: 16px - browser default*/
+   width: 23.75em; /*380px*/
+   height: 1.125em; /*18px*/
+   border: 0.0625em solid #767a78; /*1px*/ 
+   margin: 0.125em 0;/*2px*/ 
+   float: right;
+}
+
+input[type="submit"] {
+   /*RFS: 16px - browser default*/
+   width: auto;
+   height: auto;
+   border: 0 none;
+   margin: 0.214285em 0; /*3px 0*/
+   padding: 0 0.3125em; /*5px*/
+   clear: both;
+}
+
+textarea {
+   height: 11.625em; /*186px because 1px border-top and bottom and the 2px margin-top and bottom*/
+}
+
+/*main menu*/
+#access {
+   /*CB: width not defined - body*/
+   /*RFS: 13px - #access*/
+   max-width: 72.308em; /*940px*/
+   margin: auto;
+   padding: 0  1.064% 1.846153em 1.046%; /*0 10px 24px 10px*/
+   clear: both;
+   line-height: 1.846em; /*24px*/
+}
+
+#access a:hover {
+   /*RFS: 13px - #access*/
+   line-height: 1.692307em; /*22px because the 2px border*/
+   border-bottom: 0.153846em solid #000; /*2px*/
+}
+
+#access li {
+   /*CB: 940px - #access*/
+   margin-right: 2.5332%; /*24px*/
+   float:left;
+   position: relative;
+}
+
+#access li ul {
+   display: none;
+   position: absolute;
+   margin-left: 0;
+}
+
+#access li ul ul {
+   /*RFS: 13px - #access*/
+   padding-left: 0.384615em; /*5px*/
+}
+
+#access li li {
+   /*RFS: 13px - #access*/
+   width: 12.307692em; /*160px A fixed acceptable width to make the child element appear in one single line even if its text is larger than its parent li*/
+   z-index: 100;
+}
+
+#access li:hover ul, #access li ul ul {
+   display: block;
+}
+
+/*skip link*/
+.skip-link {
+   /*RFS: 12px - .skip-link*/
+   position: absolute;
+   bottom: 0.5em;
+   right: 0.5em;
+   line-height: 1.25em; /*15px*/
+}
+
+.skip-link a {
+   position: absolute;
+   left: -999999px;
+}
+
+.skip-link a:focus {
+   position: static;
+}
+
+/*page*/
+.page-title {
+   /*RFS: 40px - .page-title*/
+   margin-bottom: 0.6em; /*24px*/
+   line-height: 1.2em; /*48px*/
+}
+
+/*post*/
+.post, .type-page {
+   /*RFS: 16px - browser default*/
+   padding-bottom: 1.375em; /*22px because the 2px border-bottom*/
+   border-bottom: 0.125em solid #000; /*2px*/
+   margin-bottom: 1.5em; /*24px*/
+   clear: both;
+}
+
+.sticky {
+   /*RFS: 16px - browser default*/
+   padding-bottom: 1.25em; /*20px because the 4px border-bottom*/
+   border-bottom: 0.25em solid #000; /*4px*/
+}
+
+.single .post {
+   padding-bottom: 0;
+   border-bottom: 0 none;
+   margin-bottom: 0;
+}
+
+.post:last-child { /*separate this declaration from previous one, because last-child doesn't work in ie8 and then it doesn't read any rule*/
+   padding-bottom: 0;
+   border-bottom: 0 none;
+   margin-bottom: 0;
+}
+
+/*post navigation*/
+#nav-above, #nav-below {
+   /*RFS: 13px - #nav-above, #nav-below*/
+   overflow: hidden;
+   line-height: 1.76923em; /*23px because the 1px border*/
+}
+
+#nav-above {
+   /*RFS: 13px - #nav-above, #nav-below*/
+   border-bottom: 0.076923em dotted #767A78; /*1px*/
+   margin-bottom: 1.846em; /*24px*/
+}
+
+#nav-below {
+   /*RFS: 13px - #nav-above, #nav-below*/
+   border-top: 0.076923em dotted #767A78; /*1px*/
+   margin-top: 1.846em; /*24px*/
+}
+
+.nav-previous {
+   float:left;
+}
+
+.nav-next {
+   float:right;
+}
+
+/*entry*/
+.entry-header {
+   /*CB: 620px - #primary*/
+   /*RFS: 16px - browser default*/
+   padding-left: 8.0645%; /*50px because its background-image*/
+   margin-bottom: 1.5em; /*24px*/
+   min-height: 3em; /*48px*/
+   position: relative;
+   overflow: hidden;
+}
+
+.page .entry-header, .post.error404 .entry-header {
+   min-height: 0;
+   overflow: visible;
+}
+
+.entry-header .entry-meta, .entry-title {
+   /*CB: 570px - #entry-header*/
+   padding-left: 3.8596%; /*22px*/
+}
+
+.page .entry-title {
+   padding: 0;
+}
+
+.full-width .entry-title, .image-attachment .entry-header .entry-meta, .one-col .entry-header .entry-meta, .full-width .entry-title, .image-attachment .entry-title, .error404 .entry-title, .one-col .entry-title  { /*without sidebars*/
+   /*CB: 900px - #entry-header*/
+   padding-left: 2.444%; /*22px*/
+}
+
+
+body.page .entry-header {
+   padding-left: 0;
+}
+
+.entry-title {
+   /*RFS: 24px - .entry-title*/
+   line-height: 1em; /*24px*/
+}
+
+.entry-meta {
+   /*RFS: 13px - .entry-meta*/
+   clear: both;
+   line-height: 1.846em; /*24px*/
+}
+
+.edit-link {
+   clear: both;
+   display: block;
+}
+
+.entry-meta .edit-link {
+   display: inline;
+}
+
+.entry-content, .entry-summary {
+   /*RFS: 16px - .entry-content, .entry-summary*/
+   margin-bottom: 1.5em; /*24px*/
+   line-height: 1.5em; /*24px*/
+}
+
+.page-link {
+   clear: both;
+}
+
+[for="pwbox-131"] + br + [type="submit"] {
+   /*RFS: 13px - input[type="submit"]*/
+   float: left;
+   margin: 2em 0;/*26px 0*/ 
+   padding: 0 0.384615em; /*5px*/
+}
+
+.entry-content p, .entry-content ul, .entry-content ol, .entry-content dl, .entry-content blockquote, .entry-content pre, .entry-content form, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .entry-content address, .entry-content article, .entry-content aside, .entry-content canvas, .entry-content embed, .entry-content iframe, .entry-content video, .entry-content object, .entry-content header, .entry-content footer, .entry-content nav, .entry-content menu, .entry-summary p, .entry-summary ul, .entry-summary ol, .entry-summary dl, .entry-summary blockquote, .entry-summary pre, .entry-summary form, .entry-summary h3, .entry-summary h4, .entry-summary h5, .entry-summary h6, .entry-summary address, .entry-summary article, .entry-summary aside, .entry-summary canvas, .entry-summary embed, .entry-summary iframe, .entry-summary video, .entry-summary object, .entry-summary header, .entry-summary footer, .entry-summary nav, .entry-summary menu {
+   /*RFS: 16px - .entry-content, .entry-summary*/
+   display: block;
+   margin-bottom: 1.5em; /*24px*/
+}
+
+.entry-content ul ul, .entry-content ul ol, .entry-content ol ol, .entry-content ol ul, .entry-summary ul ul, .entry-summary ul ol, .entry-summary ol ol, .entry-summary ol ul {
+   margin-bottom: 0;
+}
+
+.entry-content h1, .entry-summary h1 {
+   /*RFS: 22px - .entry-content h1, .entry-summary h1*/
+   margin-bottom: 1.090909em; /*24px*/
+   line-height: 1.090909em; /*24px*/
+}
+
+.entry-content h2, .entry-summary h2 {
+   /*RFS: 20px - .entry-content h2, .entry-summary h2*/
+   margin-bottom: 1.2em; /*24px*/
+   line-height: 1.2em; /*24px*/
+}
+
+.entry-content .note, .entry-summary .note {
+   /*RFS: 13px - .entry-content .note*/
+   line-height: 1.846153em; /*24px*/
+   margin-bottom: 1.846153em; /*24px*/
+}
+
+.entry-content blockquote, .entry-summary blockquote {
+   /*CB: 620px - #primary*/
+   margin-left: 3.8709%; /*24px*/
+}
+
+.entry-content blockquote p, .entry-summary blockquote p {
+   margin-bottom: 0;
+}
+
+.entry-content table, .entry-summary table {
+   /*RFS: 16px - .entry-content, .entry-summary*/
+   margin-bottom: 1.4375em; /*23px because 1px border of last row*/
+}
+
+.entry-content td, .entry-summary td, .entry-content th, .entry-summary th {
+   /*RFS: 16px - .entry-content, .entry-summary*/
+   padding: 0 1.25em; /*0 20px*/
+   border: 0.0625em solid #000; /*1px*/
+   line-height: 1.4375em; /*23px because 2px of border*/
+   text-align: center;
+}
+
+.entry-content ul, .entry-content ol, .entry-summary ul, .entry-summary ol {
+   /*CB: 620px - #primary*/
+   margin-left: 3.8709%;/*24px*/
+}
+
+/*comments*/
+#comments {
+   /*RFS: 13px - #comments*/
+   border-top: 0.154em solid #000; /*2px*/
+   margin-top: 1.692em; /*22px because the 2px border-top*/
+   clear: both;
+   line-height: 1.846em; /*24px*/
+}
+
+.commentlist {
+   /*RFS: 13px - #comments*/
+   margin-bottom: 1.846em; /*24px*/
+}
+
+.bypostauthor {
+   visibility: visible; /*Don't want to make anything special when the comment author is post author, but WP requires to style this class*/
+}
+
+/*comment*/
+article.comment {
+   position: relative; /*because .avatar has an absolute position related with it*/
+   clear:both;
+   padding-left: 42px; /*fix padding to give always space to .avatar*/
+}
+
+article.comment, .pingback {
+   /*RFS: 13px - #comments*/
+   margin-top: 1.846em; /*24px*/
+}
+
+.comment > #respond, .pingback > #respond {
+   /*RFS: 13px - #comments*/
+   margin-top: 1.846em; /*24px*/
+}
+
+#respond {
+   clear: both;
+}
+
+.children {
+   /*RFS: 13px - #comments*/
+   margin-left: 1.846em; /*24px when deepth is increasing, its containing block is each time more narrow, so we define this margin in em's*/
+}
+
+/*comment footer & comment content*/
+.comment-author, .comment-meta {
+   float: left;
+}
+
+.avatar {
+   position: absolute; /*always in top-left corner of article.comment*/
+   top: 0;
+   left: 0;
+}
+
+.comment footer {
+   overflow: hidden;
+}
+
+.comment footer, .comment .comment-content, .reply {
+   /*RFS: 13px - #comments*/
+   margin-left: 0.4615em; /*6px when deepth is increasing, its containing block is each time more narrow, so we define this margin in em's*/
+}
+
+.comment-author {
+   /*RFS: 13px - #comments*/
+   margin-right: 0.4615em; /*6px when deepth is increasing, its containing block is each time more narrow, so we define this margin in em's*/
+}
+
+.comment-waiting-moderation, .comment-content, .reply {
+   clear: both;
+}
+
+.comment p, .comment ul, .comment ol, .comment dl, .comment blockquote, .comment pre, .comment form, .comment h3, .comment h4, .comment h5, .comment h6, .comment address, .comment article, .comment aside, .comment canvas, .comment embed, .comment iframe, .comment video, .comment object, .comment header, .comment footer, .comment nav, .comment menu {
+   /*RFS: 13px - #comments*/
+   display: block;
+   margin-bottom: 1.846153em; /*24px*/
+}
+
+.comment ul ul, .comment ul ol, .comment ol ol, .comment ol ul {
+   margin-bottom: 0;
+}
+
+.comment h1 {
+   /*RFS: 17px - .comment h1*/
+   margin-bottom: 1.411764em; /*24px*/
+   line-height: 1.411764em; /*24px*/
+}
+
+.comment h2 {
+   /*RFS: 15px - .comment h2*/
+   margin-bottom: 1.6em; /*24px*/
+   line-height: 1.6em; /*24px*/
+}
+
+.comment blockquote {
+   /*CB: 572px - .comment-content*/
+   margin-left: 4.1958%; /*24px*/
+}
+
+.comment blockquote p,  {
+   margin-bottom: 0;
+}
+
+.comment table {
+   /*RFS: 13px - #comments*/
+   margin-bottom: 1.76923em; /*23px because 1px border of last row*/
+}
+
+.comment td, .comment th {
+   /*RFS: 13px - #comments*/
+   padding: 0 1.538461em; /*0 20px*/
+   border: 0.076923em solid #000; /*1px*/
+   line-height: 1.76923em; /*23px because 2px of border*/
+   text-align: center;
+}
+
+.comment ul, .comment ol {
+   /*CB: 572px - .comment-content*/
+   margin-left: 4.1958%;/*24px*/
+}
+
+/*comment navigation*/
+#comment-nav-above, #comment-nav-below {
+   /*RFS: 13px - #comments*/
+   margin: 1.846em 0; /*24px 0*/
+   overflow: hidden;
+}
+
+/*comment form*/
+#commentform {
+   overflow: hidden;
+}
+
+.comment #commentform {
+   /*RFS: 13px - #comments*/
+   margin-bottom: 1.846em; /*24px*/
+}
+
+#commentform span.required {
+   float: left;
+}
+
+#commentform input, #commentform select, #commentform textarea, .form-allowed-tags {
+   /*CB: 620px - #primary*/
+   width: 61.29%; /*380px (5cols X 60pxWidth) + (3cols X 20pxMargin) + (2cols X 10pxMargin)*/
+   margin-right: 12.903%; /*80px (1col X 60pxWidth) + (2cols X 10pxMargin)*/
+}
+
+.full-width #commentform input, .image-attachment #commentform input, .error404 #commentform input, .one-col #commentform input, .full-width #commentform select, .image-attachment #commentform select, .error404 #commentform select, .one-col #commentform select, .full-width #commentform textarea, .image-attachment #commentform textarea, .error404 #commentform textarea, .one-col #commentform textarea, .full-width .form-allowed-tags, .image-attachment .form-allowed-tags, .error404 .form-allowed-tags, .one-col .form-allowed-tags  { /*without sidebars*/
+   /*CB: 950px - #primary*/
+   width: 40%; /*380px (5cols X 60pxWidth) + (3cols X 20pxMargin) + (2cols X 10pxMargin)*/
+   margin-right: 43.157%; /*410px (5col X 60pxWidth) + (5cols X 20pxMargin) + (1cols X 10pxMargin)*/
+}
+
+#commentform input, #commentform select, #commentform textarea {
+   /*RFS: 13px - #comments*/
+   height: 1.385em; /*18px*/
+   border: 0.0769em solid #767a78; /*1px*/
+   margin-top: 0.154em; /*2px*/
+   margin-bottom: 0.154em; /*2px*/
+}
+
+#commentform textarea {
+   /*RFS: 13px - #comments*/
+   height: 14.308em; /*186px because 1px border-top and bottom and the 2px margin-top and bottom*/
+}
+
+#commentform input[type="submit"] {
+   /*RFS: 13px - #comments input[type="submit"]*/
+   width: auto;
+   height: auto;
+   border: 0 none;
+   margin: 0.230769em 0; /*3px 0*/
+   padding: 0 0.384615em; /*5px*/
+   clear: both;
+}
+
+.form-allowed-tags {
+   float: right;
+   clear: both;
+}
+
+/*images*/
+#image-nav-above, #image-nav-below {
+   /*RFS: 13px - #image-nav-above, #image-nav-below*/
+   overflow: hidden;
+   line-height: 1.846em; /*24px*/
+}
+
+#image-nav-above {
+   /*RFS: 13px - #image-nav-above, #image-nav-below*/
+   margin-bottom: 1.846em; /*24px*/
+}
+
+#image-nav-below {
+   /*RFS: 13px - #image-nav-above, #image-nav-below*/
+   margin-top: 1.846em; /*24px*/
+}
+
+/*widgets*/
+.widget {
+   /*RFS: 13px - .widget*/
+   margin-bottom: 3.692em; /*48px*/
+   overflow: hidden;
+   line-height: 1.846em; /*24px*/
+   clear: both;
+}
+
+.widget:last-child {
+   margin-bottom: 0;
+}
+
+.widget h1 {
+   /*RFS: 13px - .widget*/
+   border-bottom: 0.154em solid #000; /*2px*/
+   margin-bottom: 1.846153em; /*24px*/
+   line-height: 1.692em; /*22px because the 2px border*/
+}
+
+.widget input, .widget select, .widget textarea {
+   /*CB: 280px - secondary*/
+   /*RFS: 13px - .widget*/
+   width: 60.714%; /*170px (2cols X 60pxWidth) + (1col X 20pxMargin) + (1col X 10pxMargin)*/
+   height: 1.385em; /*18px*/
+   border: 0.0769em solid #767a78; /*1px*/
+   margin: 0.154em 0; /*2px 0*/
+}
+
+.widget input[type="submit"] {
+   /*RFS: 13px - .widget input[type="submit"]*/
+   width: auto;
+   height: auto;
+   border: 0 none;
+   margin: 0.230769em 0; /*3px 0*/
+   padding: 0 0.384615em; /*5px*/
+}
+
+/*calendar widget*/
+.widget_calendar table {
+   /*CB: 280px - secondary*/
+   width: 67.857%; /*190px (2.5cols X 60pxWidth) + (1col X 20pxMargin) + (2cols X 10pxMargin)*/
+}
+
+/*wysiwyg content*/
+.entry-content div, .entry-summary div {
+   /*RFS: 16px - .entry-content, .entry-summary*/
+   margin-bottom: 1.5em; /*24px*/
+}
+
+.entry-content .alignleft, .entry-summary .alignleft {
+   /*CB: 620px - #primary*/
+   /*RFS: 16px - .entry-content*/
+   margin-right: 1.6129%; /*10px*/
+   margin-bottom: 0.625em; /*10px*/
+   float: left;
+}
+
+.full-width .entry-content .alignleft, .image-attachment .entry-content .alignleft, .error404 .entry-content .alignleft, .one-col .entry-content .alignleft, .full-width .entry-summary .alignleft, .image-attachment .entry-summary .alignleft, .error404 .entry-summary .alignleft, .one-col .entry-summary .alignleft { /*without sidebars*/
+   /*CB: 950px - #primary*/
+   margin-right: 1.0526%; /*10px*/
+}
+
+.entry-content .wp-caption.alignleft, .entry-summary .wp-cation.alignleft {
+   margin-right: 0; /*to compensate 10px extra-width inserted by wordpress*/
+}
+
+.entry-content .alignright, .entry-content .alignright {
+   /*CB: 620px - #primary*/
+   /*RFS: 16px - .entry-content, .entry-summary*/
+   margin-left: 1.6129%; /*10px*/
+   margin-bottom: 0.625em; /*10px*/
+   float: right;
+}
+
+.full-width .entry-content .alignright, .image-attachment .entry-content .alignright, .error404 .entry-content .alignright, .one-col .entry-content .alignright, .full-width .entry-summary .alignright, .image-attachment .entry-summary .alignright, .error404 .entry-summary .alignright, .one-col .entry-summary .alignright { /*without sidebars*/
+   /*CB: 950px - #primary*/
+   margin-left: 1.0526%; /*10px*/
+}
+
+.entry-content .wp-caption.alignright, .entry-summary .wp-cation.alignright {
+   /*CB: 620px - #primary*/
+   margin-right: -1.6129%; /*10px to compensate 10px extra-width inserted by wordpress*/
+}
+
+.full-width .entry-content .wp-caption.alignright, .image-attachment .entry-content .wp-caption.alignright, .error404 .entry-content .wp-caption.alignright, .one-col .entry-content .wp-caption.alignright, .full-width .entry-summary .wp-caption.alignright, .image-attachment .entry-summary .wp-caption.alignright, .error404 .entry-summary .wp-caption.alignright, .one-col .entry-summary .wp-caption.alignright { /*without sidebars*/
+   /*CB: 950px - #primary*/
+   margin-right: -1.0526%; /*10px wp already insert an 10px inline margin-right in this element*/
+}
+
+.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   clear: both;
+}
+
+.entry-content .wp-caption-text, .entry-summary .wp-caption-text, .gallery-caption {
+   margin-bottom: 0;
+}
+
+.entry-content img, .entry-content iframe, .entry-content embed, .entry-content object, .entry-content video, .entry-content .wp-caption, .entry-summary img, .entry-summary iframe, .entry-summary embed, .entry-summary object, .entry-summary video, .entry-summary .wp-caption {
+   max-width: 100%;
+   height: auto;
+}
+
+.wp-caption iframe {
+   margin-bottom: 0;
+}
+
+/*404*/
+.error404 .entry-header, .error404 .entry-header h1 {
+   padding-left: 0;
+}
+
+.error404 .widget {
+   /*RFS: 16px - .entry-content*/
+   line-height: 1.5em; /*24px*/
+   margin-bottom: 1.5em; /*24px*/
+}
+
+.error404 .widget h2, .error404 .widget ol, .error404 .widget ul, .error404 .widget dl, .error404 .widget p {
+   margin-bottom: 0;
+}
+
+.error404 #searchform, .no-results #searchform {
+   /*RFS: 16px - browser default*/
+   overflow: hidden;
+   margin-bottom: 1.5em /*24px*/;
+}
+
+.error404 input, .error404 select, .error404 textarea, .error404 button, .no-results input, .no-results select, .no-results textarea, .no-results button {
+   width: auto;
+   float: left;
+   clear: both;
+}
+
+.error404 #searchsubmit, .no-results #searchsubmit {
+   /*CBW: 950px - #main*/
+   margin-left: 1.263150%; /*12px*/
+   float: left;
+   clear: none;
+}
+
+/*ie6Message*/
+#ie6Message {
+   /*RFS: 16px - browser default*/
+   line-height: 1.5em; /*24px*/
+   padding: 1.5em; /*24px*/
+}

@@ -1,0 +1,8 @@
+/*This file is part of Bwater 1.0*/
+.entry-header {
+   background-position: right top;
+}
+
+.widget_calendar td, .widget_calendar th {
+   text-align: right;
+}

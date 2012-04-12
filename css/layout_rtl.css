@@ -1,0 +1,199 @@
+/*This file is part of Bwater 1.0*/
+#branding hgroup {
+   padding: 0.5em 3.75% 1.5em 1.041%;
+   margin-right: 70.833333%;
+   margin-left: 2.5%;
+}
+
+#main {
+   padding-left: 0;
+   padding-right: 1.053%;
+}
+
+#primary {
+   float:right;
+}
+
+#secondary {
+   float: left;
+}
+
+#primary {
+   margin-left: 2.105%;
+   margin-right: 0;
+}
+
+.full-width #primary, .image-attachment #primary, .error404 #primary, .one-col #primary {
+   margin-left: 0;
+}
+
+#secondary {
+   margin-left: 0;
+   margin-right: 3.158%;
+}
+
+label {
+   float: right;
+   clear: right;
+}
+
+input, select, textarea {
+   float: left;
+}
+
+#access li {
+   margin-left: 2.5332%;
+   margin-right: 0;
+   float:right;
+}
+
+#access li ul {
+   margin-right: 0;
+}
+
+#access li ul ul {
+   padding-left: 0;
+   padding-right: 0.384615em;
+}
+
+.skip-link {
+   left: 0.5em;
+   right: auto;
+}
+
+.nav-previous {
+   float:right;
+}
+
+.nav-next {
+   float:left;
+}
+
+.entry-header {
+   padding-left: 0;
+   padding-right: 8.0645%;
+}
+
+.entry-header .entry-meta, .entry-title {
+   padding-left: 0;
+   padding-right: 3.8596%;
+}
+
+.full-width .entry-title, .image-attachment .entry-header .entry-meta, .one-col .entry-header .entry-meta, .full-width .entry-title, .image-attachment .entry-title, .error404 .entry-title, .one-col .entry-title  { /*without sidebars*/
+   padding-left: 0;
+   padding-right: 2.444%;
+}
+
+body.page .entry-header {
+   padding-right: 0;
+}
+
+.entry-content blockquote, .entry-summary blockquote {
+   margin-left: 0;
+   margin-right: 3.8709%;
+}
+
+.entry-content ul, .entry-content ol, .entry-summary ul, .entry-summary ol {
+   margin-left: 0;
+   margin-right: 3.8709%;
+}
+
+article.comment {
+   padding-left: 0;
+   padding-right: 42px;
+}
+
+.children {
+   margin-left: 0;
+   margin-right: 1.846em;
+}
+
+.comment-author, .comment-meta {
+   float: right;
+}
+
+.comment blockquote {
+   margin-left: 0;
+   margin-right: 4.1958%;
+}
+
+.comment ul, .comment ol {
+   /*CB: 572px - .comment-content*/
+   margin-left: 4.1958%;/*24px*/
+}
+
+.avatar {
+   left: auto;
+   right: 0;
+}
+
+.comment footer, .comment .comment-content, .reply {
+   margin-left: 0;
+   margin-right: 0.4615em;
+}
+
+.comment-author {
+   margin-left: 0.4615em;
+   margin-right: 0;
+}
+
+#commentform span.required {
+   float: right;
+}
+
+#commentform input, #commentform select, #commentform textarea, .form-allowed-tags {
+   margin-left: 12.903%;
+   margin-right: 0;
+}
+
+.full-width #commentform input, .image-attachment #commentform input, .error404 #commentform input, .one-col #commentform input, .full-width #commentform select, .image-attachment #commentform select, .error404 #commentform select, .one-col #commentform select, .full-width #commentform textarea, .image-attachment #commentform textarea, .error404 #commentform textarea, .one-col #commentform textarea, .full-width .form-allowed-tags, .image-attachment .form-allowed-tags, .error404 .form-allowed-tags, .one-col .form-allowed-tags  { /*without sidebars*/
+   margin-left: 43.157%;
+   margin-right: 0;
+}
+
+.form-allowed-tags {
+   float: left;
+}
+
+.entry-content .alignleft, .entry-summary .alignleft {
+   margin-left: 1.6129%;
+   margin-right: 0;
+   float: right;
+}
+
+.full-width .entry-content .alignleft, .image-attachment .entry-content .alignleft, .error404 .entry-content .alignleft, .one-col .entry-content .alignleft, .full-width .entry-summary .alignleft, .image-attachment .entry-summary .alignleft, .error404 .entry-summary .alignleft, .one-col .entry-summary .alignleft {
+   margin-left: 1.0526%;
+   margin-right: 0;
+}
+
+.entry-content .wp-caption.alignleft, .entry-summary .wp-cation.alignleft {
+   margin-left: 0;
+}
+
+.entry-content .alignright, .entry-content .alignright {
+   margin-left: 0;
+   margin-right: 1.6129%;
+   float: left;
+}
+
+.full-width .entry-content .alignright, .image-attachment .entry-content .alignright, .error404 .entry-content .alignright, .one-col .entry-content .alignright, .full-width .entry-summary .alignright, .image-attachment .entry-summary .alignright, .error404 .entry-summary .alignright, .one-col .entry-summary .alignright {
+   margin-left: 0;
+   margin-right: 1.0526%;
+}
+
+.entry-content .wp-caption.alignright, .entry-summary .wp-cation.alignright {
+   margin-left: -1.6129%;
+   margin-right: 0;
+}
+
+.full-width .entry-content .wp-caption.alignright, .image-attachment .entry-content .wp-caption.alignright, .error404 .entry-content .wp-caption.alignright, .one-col .entry-content .wp-caption.alignright, .full-width .entry-summary .wp-caption.alignright, .image-attachment .entry-summary .wp-caption.alignright, .error404 .entry-summary .wp-caption.alignright, .one-col .entry-summary .wp-caption.alignright {
+   margin-left: -1.0526%;
+}
+
+.error404 .entry-header, .error404 .entry-header h1 {
+   padding-right: 0;
+}
+
+.error404 input, .error404 select, .error404 textarea, .error404 button {
+   float: right;
+}

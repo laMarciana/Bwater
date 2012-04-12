@@ -1,0 +1,417 @@
+/*This file is part of Bwater 1.0*/
+/*skeletor*/
+body {
+   /*RFS = browser default = 16px*/
+   font-size: 100%;
+   font-family: Arial, sans-serif;
+   color: #000;
+}
+
+#branding {
+   /*RFS: 16px - browser default*/
+   font-size: 1em; /*16px*/
+   font-family: "Helvetica Neue", "Myriad Pro", Arial, sans-serif;
+}
+
+#branding #hgroup_branding_wrapper {
+   background-color: #fff;
+}
+
+#branding hgroup {
+   color: #fff;
+   background-color: #000;
+}
+
+#branding hgroup h1 {
+   text-transform: uppercase;
+}
+
+#colophon {
+   /*RFS: 16px - browser default*/
+   font-size: 0.8125em; /*13px*/
+}
+
+/*forms*/
+input, select, textarea, button {
+   /*overwrite OS default*/
+   font-size: inherit;
+   font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+   outline: 1px solid #000;
+}
+
+input[type="submit"] {
+   /*RFS: 16px - browser default*/
+   font-size: 0.875em; /*14px*/
+   color: #fff;
+   background-color: #048d99;
+   cursor: pointer;
+}
+
+input[type="submit"]:hover {
+   background-color: #000;
+}
+
+/*links*/
+a:focus, a:active {
+   outline: 1px dotted #000;
+}
+
+#branding hgroup a {
+   color: #fff;
+}
+
+#branding hgroup a:hover {
+   text-decoration: underline;
+}
+
+#branding hgroup a:focus, #branding hgroup a:active {
+   outline:1px dotted #fff;
+}
+
+nav#access a {
+   color: #000;
+   text-transform: uppercase;
+}
+
+nav#access a:hover {
+   color: #000;
+   background-color: transparent;
+   /*border styled in layout.css*/
+}
+
+.entry-content a, .entry-summary a, .comment a {
+   text-decoration: underline;
+}
+
+.widget_archive a:visited:after, .widget_categories a:visited:after, .widget_tag_cloud a:visited:after {
+   content: "\00A0\221A";
+}
+
+a {
+   color: #048d99;
+}
+
+#page a:hover {
+   color: #fff;
+   background-color: #000;
+}
+
+.skip-link {
+   /*RFS: 16px - browser default*/
+   font-size: 0.75em; /*12px*/
+}
+
+.more-link {
+   /*RFS: 16px - .entry-content, .entry-summary*/
+   font-size: 0.8125em; /*13px*/
+}
+
+.more-link:after {
+   content: ' »';
+}
+
+/*general*/
+strong {
+   font-weight: bold;
+}
+
+em, q, cite, blockquote {
+   font-style: italic;
+}
+
+ul > li {
+   list-style-type: disc;
+}
+
+ol > li {
+   list-style-type: decimal;
+}
+
+li {
+   list-style-position: inside;
+}
+
+span[lang] {
+   font-style: italic;
+}
+
+sub {
+   vertical-align: sub;
+}
+
+sup {
+   vertical-align: super;
+}
+
+dt, ins {
+   font-weight: bold;
+}
+
+address, address {
+   font-style: italic;
+}
+
+q {
+   quotes: '« ' ' »' '“' '”';
+}
+
+:lang(en) > q {
+   quotes: '‘' '’' '“' '”';
+}
+
+:lang(es) > q {
+   quotes: '«' '»' '“' '”';
+}
+
+:lang(ca) > q {
+   quotes: '«' '»' '“' '”'
+}
+
+q:before {
+   content: open-quote;
+}
+
+q:after {
+   content: close-quote;
+}
+
+/*main menu*/
+nav#access {
+   /*RFS: 16px - browser default*/
+   font-size: 0.8125em; /*13px*/
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav#access ul li {
+   list-style-type: none;
+}
+
+#access li li {
+   background-color: #fff;
+}
+
+/*page*/
+.page-title {
+   /*RFS: 16px - browser default*/
+   font-size: 2.5em; /*40px*/
+   font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*post navigation*/
+#nav-above, #nav-below {
+   /*RFS: 16px - browser default*/
+   font-size: 0.8125em; /*13px*/
+}
+
+.nav-previous a:before {
+   content: '« ';
+}
+
+.nav-next a:after {
+   content: ' »';
+}
+
+/*entry*/
+.entry-header {
+   /*CB: 620px - #primary*/
+   background-image: url(../images/entryHeaderBg.png);
+   background-position: left top;
+   background-repeat: no-repeat;
+   background-size: 7.9032% auto; /*49px auto*/
+}
+
+.page .entry-header {
+   background-image: none;
+}
+
+.entry-title {
+   /*RFS: 16px - browser default*/
+   font-size: 1.5em; /*24px*/
+   font-family: "Myriad Pro", Arial, sans-serif;
+}
+
+.entry-meta {
+   /*RFS: 16px - browser default*/
+   font-size: 0.8125em; /*13px*/
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   color: #767a78;
+}
+
+footer.entry-meta span:after {
+   content: ' | ';
+}
+
+footer.entry-meta span:last-child:after, footer.entry-meta span.posted-on:after, footer.entry-meta span.by:after {
+   content: normal;
+}
+
+.entry-content, .entry-summary {
+   /*RFS: 16px - browser default*/
+   font-size: 1em; /*16px*/
+   font-family: Arial, sans-serif;
+}
+
+.entry-content .note {
+   /*RFS: 16px - entry-content*/
+   font-size: 0.8125em; /*13px*/
+}
+
+.entry-content h1, .entry-content h2, .entry-content h2, .entry-content h4, .entry-content h5, .entry-content h6, .entry-summary h1, .entry-summary h2, .entry-summary h3, .entry-summary h4, .entry-summary h5, .entry-summary h6 {
+   font-weight: bold;
+}
+
+.entry-content h1 {
+   /*RFS: 16px - entry-content*/
+   font-size: 1.375em; /*22px*/
+}
+
+.entry-content h2 {
+   /*RFS: 16px - entry-content*/
+   font-size: 1.25em; /*20px*/
+}
+
+.entry-content th {
+   color: #fff;
+   background-color: #000;
+}
+
+/*comments*/
+#comments {
+   /*RFS: 16px - browser default*/
+   font-size: 0.8125em; /*13px*/
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#comments-title {
+   /*RFS: 16px - browser default*/
+   font-size: 0.8125em; /*13px*/
+}
+
+#comments-title em {
+   color: #767a78;
+}
+
+#comments-title em:before, #comments-title em:after {
+   content: '"';
+}
+
+.comment {
+   list-style-type: none;
+}
+
+.comment th {
+   color: #fff;
+   background-color: #000;
+}
+
+.comment h1, .comment h2, .comment h3, .comment h4, .comment h5, .comment h6 {
+   font-weight: bold;
+}
+
+/*comment footer & comment content*/
+.comment-author cite:after, .comment-author cite:before {
+   content: none;
+}
+
+.comment-meta:before {
+   content: ' | ';
+}
+
+#comments .comment-content {
+   font-family: Arial, sans-serif;
+}
+
+.comment h1 {
+   /*RFS: 13px - #comments*/
+   font-size: 1.307692em; /*17px*/
+}
+
+.comment h2 {
+   /*RFS: 13px - #comments*/
+   font-size: 1.153846em; /*15px*/
+}
+
+/*commentform*/
+#commentform code {
+   font-size: inherit;
+   font-family: inherit;
+   font-style: italic;
+}
+
+#commentform input[type="submit"] {
+   /*RFS: 13px - #comments*/
+   font-size: 1em; /*13px*/
+}
+
+/*image*/
+#image-nav-above, #image-nav-below {
+   /*RFS: 16px - browser default*/
+   font-size: 0.8125em; /*13px*/
+}
+
+
+/*widgets*/
+.widget {
+   /*RFS: 16px - browser default*/
+   font-size: 0.8125em; /*13px*/
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.widget h1 {
+   font-family: "Frutiger45-Light", "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   text-transform: uppercase;
+}
+
+.widget ul li {
+   list-style-type: none;
+   list-style-position: outside; /*otherwise, ie7 still leave its space*/
+}
+
+.widget input[type="submit"] {
+   /*RFS: 13px - .widget*/
+   font-size: 1em; /*13px*/
+}
+
+/*calendar widget*/
+.widget_calendar td, .widget_calendar th {
+   text-align: left;
+}
+
+.widget_calendar caption, .widget_calendar th {
+   font-weight: bold;
+}
+
+/*wysiwyg content*/
+.wp-caption-text, .gallery-caption {
+   /*RFS: 16px - entry-content, .entry-summary*/
+   font-size: 0.8125em; /*13px*/
+}
+
+.aligncenter .wp-caption-text {
+   text-align: center;
+}
+
+.entry-content sub, .entry-summary sub, .entry-content sup, .entry-summary sup {
+   /*RFS: 16px - .entry-content, .entry-summary*/
+   font-size: 0.625em; /*10px*/
+}
+
+/*error404*/
+.error404 .entry-header {
+   background-image: none;
+}
+
+.error404 .widget {
+   /*RFS: 16px - browser default*/
+   font-size: 1em; /*16px*/
+}
+
+/*ie6Message*/
+#ie6Message {
+   font-weight: bold;
+   color: #fff;
+   background-color: #000;
+}
