@@ -16,7 +16,7 @@ It also uses a baseline rhythm system. You can learn about it reading this [arti
 Bwater is 100% fluid, both horizontally and vertically. If you look at the CSS source code, you'll see this is fully commented to help customization. Everywhere you see `CBW`, it stands for *containing block width* and it is used to calculate percentage horizontal values. Where it says `RFS`, it stands for *relevant font size* and it is used to calculate em values.
 
 ##Localization
-Bwater already comes translated in three languages: english, spanish and catalan. If you need to translate it into another language you can read this [tutorial in how to localize a wordpress theme](http://www.solostream.com/blog/tutorials/translate-wordpress-theme/). Please, if so, give us feedback to include the translation in next release.
+Bwater already comes fully translated in three languages -english, spanish and catalan- and partially in arabic. If you need to translate it into another language you can read this [tutorial in how to localize a wordpress theme](http://www.solostream.com/blog/tutorials/translate-wordpress-theme/). Please, if so, give us feedback to include the translation in next release.
 
 ##Right-to-left languages
 Bwater is already prepared to be used with right-to-left (rtl) languages. If you download wordpress in a rtl language then everything will work automatically. If instead you downloaded wordpress in a left-to-right language, be sure to update your language configuration in `wp-config.php` and to copy the language file located in `wp-content/language` in the rtl language wordpress package (for example, `wp-content/language/ar.php`) in your wordpress setup.
