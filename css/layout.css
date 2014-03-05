@@ -744,6 +744,7 @@ article.comment, .pingback {
    }
 
    #primary {
-      margin-bottom: 3em
+      /*RFS: 16px - browser default*/
+      margin-bottom: 3em; /*48px*/
    }
 }

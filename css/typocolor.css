@@ -415,3 +415,10 @@ footer.entry-meta span:last-child:after, footer.entry-meta span.posted-on:after,
    color: #fff;
    background-color: #000;
 }
+
+/*responsive*/
+@media (max-width: 650px) {
+   #colophon {
+      text-align: center;
+   }
+}
