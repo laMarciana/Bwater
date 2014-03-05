@@ -96,11 +96,14 @@ body {
    #primary, #secondary {
       float: none;
       width: 98%;
-      margin: 0 auto;
    }
 
    #primary {
       margin-bottom: 3em
+   }
+
+   #secondary {
+      margin-left: 0;
    }
 }
 
