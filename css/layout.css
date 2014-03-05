@@ -58,7 +58,7 @@ body {
    /*CB: width not defined - page*/
    /*RFS: 16px - browser default*/
    max-width: 59.375em; /*950px*/
-   margin: 3em auto 2.25em auto; /*48px auto 36px auto margin-bottom because the 12px border-top in #colophon*/
+   margin: 0 auto 2.25em auto; /*0 auto 36px auto margin-bottom because the 12px border-top in #colophon*/
    padding-left: 1.053%; /*10px*/
    clear: both;
    overflow: hidden;
@@ -130,6 +130,7 @@ textarea {
    padding: 0  1.064% 1.846153em 1.046%; /*0 10px 24px 10px*/
    clear: both;
    line-height: 1.846em; /*24px*/
+   overflow: hidden;
 }
 
 #access a:hover {
