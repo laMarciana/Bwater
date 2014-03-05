@@ -1,5 +1,5 @@
 #Bwater
-As water, this wordpress theme is 100% fluid-width. Bwater will look great in virtually any screen resolution or font size. Bwater is designed and developed following a fluid grid system and a fluid baseline rhythm. It uses pure HTML5 and CSS3, microformats included. It is as well translation ready and ready to work with a right-to-left language. You can configure it to use with a single column or with an additional right sidebar where you can put any widget. It's also possible to have a custom menu. Bwater works fine in any modern browser.
+As water, this wordpress theme is 100% fluid-width. Bwater will look great in virtually any screen resolution or font size. Furthermore, it is responsive for small resolutions. Bwater is designed and developed following a fluid grid system and a fluid baseline rhythm. It uses pure HTML5 and CSS3, microformats included. It is as well translation ready and ready to work with a right-to-left language. You can configure it to use with a single column or with an additional right sidebar where you can put any widget. It's also possible to have a custom menu. Bwater works fine in any modern browser.
 
 ##Setup
 You can get Bwater, in zip format, from this URL: [https://github.com/laMarciana/bwater/zipball/master](https://github.com/laMarciana/bwater/zipball/master)
