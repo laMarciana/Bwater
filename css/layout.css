@@ -311,10 +311,24 @@ body.page .entry-header {
    clear: both;
 }
 
-[for="pwbox-131"] + br + [type="submit"] {
+[for="pwbox-131"] {
+   float: none;
+}
+
+/*fix for password entry markup*/
+br {
+   display: none;
+}
+
+[for^="pwbox"] input[type="password"] {
+   float: none;
+   margin-left: 1em;
+}
+
+[for^="pwbox"] [type="submit"] {
    /*RFS: 13px - input[type="submit"]*/
-   float: left;
-   margin: 2em 0;/*26px 0*/ 
+   display: inline;
+   margin: 0; /*0*/ 
    padding: 0 0.384615em; /*5px*/
 }
 
