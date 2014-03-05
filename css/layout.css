@@ -250,7 +250,7 @@ textarea {
 .entry-header {
    /*CB: 620px - #primary*/
    /*RFS: 16px - browser default*/
-   padding-left: 8.0645%; /*50px because its background-image*/
+   padding-left: 50px; /*because its background-image*/
    margin-bottom: 1.5em; /*24px*/
    min-height: 3em; /*48px*/
    position: relative;
