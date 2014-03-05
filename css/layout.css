@@ -731,17 +731,19 @@ article.comment, .pingback {
       width: 13em;
    }
 
+   #access {
+      width: 90%;
+   }
+
    #primary, #secondary {
+      /*CB: width not defined - body*/
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
       float: none;
-      width: 98%;
    }
 
    #primary {
       margin-bottom: 3em
    }
-
-   #secondary {
-      margin-left: 0;
-   }
 }
-
