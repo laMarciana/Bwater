@@ -92,21 +92,6 @@ body {
    margin-left: 3.158%; /*30px*/
 }
 
-@media (max-width: 650px) {
-   #primary, #secondary {
-      float: none;
-      width: 98%;
-   }
-
-   #primary {
-      margin-bottom: 3em
-   }
-
-   #secondary {
-      margin-left: 0;
-   }
-}
-
 /*general forms*/
 label {
    float: left;
@@ -737,3 +722,25 @@ article.comment, .pingback {
    line-height: 1.5em; /*24px*/
    padding: 1.5em; /*24px*/
 }
+
+/*responsive*/
+@media (max-width: 650px) {
+   #branding hgroup {
+      margin: auto;
+      width: 13em;
+   }
+
+   #primary, #secondary {
+      float: none;
+      width: 98%;
+   }
+
+   #primary {
+      margin-bottom: 3em
+   }
+
+   #secondary {
+      margin-left: 0;
+   }
+}
+
