@@ -92,6 +92,18 @@ body {
    margin-left: 3.158%; /*30px*/
 }
 
+@media (max-width: 650px) {
+   #primary, #secondary {
+      float: none;
+      width: 98%;
+      margin: 0 auto;
+   }
+
+   #primary {
+      margin-bottom: 3em
+   }
+}
+
 /*general forms*/
 label {
    float: left;
